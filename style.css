@@ -4,21 +4,17 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
 .menu ul{
     list-style: none;
     display: flex;
-    justify-content: right;
-    background-color: #8f1d1d;
-    padding: 10px 20px;
-    
-    
-
+    justify-content: center;
+    background-color: #320A6B;
 }
 .menu ul li {
-  margin-left: 20px;
+  margin-left: 150px;
   text-decoration: none;
   
 
@@ -28,13 +24,57 @@ body {
   color: white; /* opcional para que se vea mejor sobre fondo oscuro */
   font-weight: 500;
   font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
 }
 
 .menu ul li a:hover {
-  color: #050505; /* Cambia el color al pasar el mouse */
+  color: #D5E5D5; /* Cambia el color al pasar el mouse */
 }
 .header{
-    background-image: url("imagen.jpg");
+    background-image:("imagen4.jpeg");
+    padding: 20px;
+    background-size: cover;   
+    text-align: center;
+    display : flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+   
+    height: 100vh;
+}
+.header h1 {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.header span{
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40px;
+}
+.header p{
+    display: block;
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 40px;
+}
+.header-text button{
+    background-color: #4bb850;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    
+}
+.header{
+    background-image: url("Img/1.jpg");
     padding: 20px;
     background-size: cover;   
     text-align: center;
@@ -67,8 +107,8 @@ body {
 }
 
 .header-text button{
-    background-color: #ffbf00;
-    color: rgb(0, 0, 0);
+    background-color: #f1d991;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -112,7 +152,7 @@ body {
     align-items:flex-start;
     flex-direction: column;
     margin-top: 40px;
-    background-color: rgba(222, 230, 119, 0.747);
+    background-color: rgba(243, 244, 230, 0.348);
     padding: 30px;
     padding-bottom: 100px;
 }
@@ -201,8 +241,8 @@ body {
   flex-wrap: wrap;
   gap: 40px;
   
-  padding: 60px 40px;
-  margin-top: -10px;
+  padding: 80px 80px;
+  margin-top: -60px;
 }
 
 .sobre-mi-img {
@@ -238,18 +278,18 @@ body {
 .sobre-mi-texto button {
   align-self: flex-start;
   padding: 12px 24px;
-  background-color: rgb(255, 0, 0);
+  background-color: black;
   color: white;
   border: none;
   cursor: pointer;
   font-size: 1rem;
-  border-radius: 4%;
+  border-radius: 4px;
   margin: 0 auto;
   margin-top: 30px;
 }
 
 .footer{
-    background-color: #5e5d5d;
+    background-color: #333;
     color: white;
     display: flex;
     flex-direction: column;
@@ -257,8 +297,13 @@ body {
 }
 .footer-info{
     text-align: center;
-    padding: 50px;
+    padding: 20px;
     font-family: 'Montserrat', sans-serif;
+}
+.footer-links{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
 }
 .footer-links ul{
     list-style: none;
@@ -269,8 +314,8 @@ body {
 
 .footer-links a{
     text-decoration: none;
-    color: rgb(12, 12, 12);
-    margin: 0 20px;
+    color: white;
+    margin: 0 15px;
     font-family: 'Montserrat', sans-serif;
 }
 .footer-info-nombre{
@@ -278,11 +323,129 @@ body {
     margin-bottom: 20px;
 
 }
-.footer-contacto{
+.footer-contacto ul{
     display: flex;
     flex-direction: row;
+    list-style: none;
+    padding-left: 50px;
 }
 .footer-contacto li{
     margin: 0 10px;
     font-size: 1.2rem;
+    padding-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.footer-contacto a{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+
+
+}
+/* ============================= */
+/*   ESTILOS RESPONSIVOS         */
+/* ============================= */
+
+/* --- Tablets (pantallas medianas) --- */
+@media (max-width: 1024px) {
+  .menu ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header span {
+    font-size: 1.2rem;
+  }
+
+  .tecnologias {
+    gap: 15px;
+    font-size: 30px;
+  }
+
+  .habi-secciones {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .habi-seccion-dos {
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .sobre-mi {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-mi-texto h2 {
+    font-size: 2rem;
+  }
+}
+
+/* --- Celulares (pantallas pequeñas) --- */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu ul li {
+    margin: 10px 0;
+  }
+
+  .header {
+    padding: 10px;
+    height: auto;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header span {
+    font-size: 1rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .tecnologias {
+    font-size: 24px;
+    gap: 10px;
+  }
+
+  .habi-item .habi-numero {
+    font-size: 40px;
+    margin-right: 20px;
+  }
+
+  .sobre-mi-img img {
+    max-width: 90%;
+  }
+
+  .sobre-mi-texto h2 {
+    font-size: 1.5rem;
+  }
+
+  .sobre-mi-texto p {
+    font-size: 0.9rem;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-contacto {
+    flex-direction: column;
+    text-align: center;
+  }
 }
